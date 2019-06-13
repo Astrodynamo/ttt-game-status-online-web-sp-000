@@ -16,8 +16,8 @@ WIN_COMBINATIONS = [
   ]
   
 # Winner methods
-def won?
-  
+def won? (board)
+  WIN_COMBINATIONS.each do ||
 end
 
 def full?
