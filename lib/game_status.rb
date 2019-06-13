@@ -17,7 +17,9 @@ WIN_COMBINATIONS = [
   
 # Winner methods
 def won? (board)
-  
+  WIN_COMBINATIONS.detect do |win_combination|
+    
+  end
 end
 
 def full?
