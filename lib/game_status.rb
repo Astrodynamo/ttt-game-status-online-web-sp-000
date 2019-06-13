@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 # Winner methods
 def won? (board)
   WIN_COMBINATIONS.detect do |win_combination|
-    board.values_at(win_combination[0], win_combination[1], win_combination[2]) == 
+    board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["X", "X", "X"] || board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["O", "O", "O"]
   end
 end
 
