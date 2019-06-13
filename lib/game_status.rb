@@ -14,3 +14,25 @@ WIN_COMBINATIONS = [
   [0, 4, 8], # Diagonal from top left
   [2, 4, 6] # Diagonal from top right
   ]
+  
+# Winner methods
+def won?
+  
+end
+
+def full?
+  
+end
+
+def draw?
+  
+end
+
+def over?
+  
+end
+
+def winner
+  
+end
+  
