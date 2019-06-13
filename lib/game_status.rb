@@ -17,29 +17,7 @@ WIN_COMBINATIONS = [
   
 # Winner methods
 def won? (board)
-  x_positions = []
-  o_positions = []
-  board.each  do |position|
-    x_positions << position.index if position == "X"
-    o_positions << position.index if position == "O"
-  end
   
-  WIN_COMBINATIONS.detect do |win_combination|
-    if x_positions.include?(win_combination)
-  
-  win_index_1 = win_combination[0]
-  win_index_2 = win_combination[1]
-  win_index_3 = win_combination[2]
-  position_1 = board[win_index_1]
-  position_2 = board[win_index_2]
-  position_3 = board[win_index_3]
-  
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return win_combination
-    else
-      false
-    end
-  end
 end
 
 def full?
