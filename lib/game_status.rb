@@ -25,6 +25,8 @@ def won? (board)
   end
   
   WIN_COMBINATIONS.detect do |win_combination|
+    if x_positions.include?(win_combination)
+  
   win_index_1 = win_combination[0]
   win_index_2 = win_combination[1]
   win_index_3 = win_combination[2]
