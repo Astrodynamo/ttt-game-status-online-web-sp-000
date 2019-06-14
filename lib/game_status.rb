@@ -23,7 +23,7 @@ def won? (board)
 end
 
 def full? (board)
-  !board.detect {|position| position == " "}
+  !board.find {|position| position == " "}
 end
 
 def draw?
