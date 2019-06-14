@@ -39,7 +39,7 @@ end
 def winner (board)
   winner_token = nil
   if won?(board)
-    winner_token = won?(board)[1]
+    winner_token = board[won?(board)[1]]
   end
   winner_token
 end
