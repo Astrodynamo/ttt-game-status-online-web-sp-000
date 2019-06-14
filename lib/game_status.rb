@@ -23,7 +23,10 @@ def won? (board)
 end
 
 def full? (board)
-  
+  while position_taken?(board, 0..8)
+    true
+  end
+false
 end
 
 def draw?
