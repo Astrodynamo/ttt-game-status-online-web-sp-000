@@ -23,7 +23,8 @@ def won? (board)
 end
 
 def full? (board)
-  while position_taken?(board, 0..8)
+  index = (0..8)
+  while position_taken?(board, index)
     true
   end
 false
