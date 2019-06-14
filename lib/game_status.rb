@@ -23,11 +23,7 @@ def won? (board)
 end
 
 def full? (board)
-  index = (0..8)
-  while position_taken?(board, index)
-    true
-  end
-false
+  !board.detect {|position| position == " "}
 end
 
 def draw?
