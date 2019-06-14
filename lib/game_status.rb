@@ -26,8 +26,8 @@ def full? (board)
   !board.find {|position| position == " "}
 end
 
-def draw?
-  
+def draw? (board)
+  return true if !won?(board) && full?(board)
 end
 
 def over?
