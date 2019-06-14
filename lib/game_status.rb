@@ -23,12 +23,7 @@ def won? (board)
 end
 
 def full? (board)
-  board.each do |position|
-    until !position_taken(board, position.index)
-      return true
-    end
-    false
-  end
+  
 end
 
 def draw?
